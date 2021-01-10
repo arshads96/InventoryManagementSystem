@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: shubhampal261
+      changes:
+        - addColumn:
+            tableName: invoice
+            columns:
+              - column:
+                  name: rate
+                  type: decimal
+                  defaultValue: 0.0
+                  constraints:
+                    nullable: false
